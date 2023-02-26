@@ -55,7 +55,7 @@ const Nav = styled.nav`
   gap: 48px;
   margin: 0px 48px;
 
-  @media ${QUERIES.tablet} {
+  @media ${QUERIES.tabletAndSmaller} {
     display: none;
   }
 `;
@@ -63,12 +63,12 @@ const Nav = styled.nav`
 const MobileNav = styled.nav`
   display: none;
 
-  @media ${QUERIES.tablet} {
+  @media ${QUERIES.tabletAndSmaller} {
     display: flex;
     gap: 2rem;
   }
 
-  @media ${QUERIES.phone} {
+  @media ${QUERIES.phoneAndSmaller} {
     gap: 1rem;
   }
 `;

@@ -18,13 +18,13 @@ export const WEIGHTS = {
 };
 
 const BREAKPOINTS = {
-  phone: 37.5,
-  tablet: 59.375,
-  laptop: 81.25,
+  phone: 600,
+  tablet: 950,
+  laptop: 1300,
 };
 
 export const QUERIES = {
-  phone: `(max-width: ${BREAKPOINTS.phone}rem)`,
-  tablet: `(max-width: ${BREAKPOINTS.tablet}rem)`,
-  laptop: `(max-width: ${BREAKPOINTS.laptop}rem)`,
+  phoneAndSmaller: `(max-width: ${BREAKPOINTS.phone / 16}rem)`,
+  tabletAndSmaller: `(max-width: ${BREAKPOINTS.tablet / 16}rem)`,
+  laptopAndSmaller: `(max-width: ${BREAKPOINTS.laptop / 16}rem)`,
 };
